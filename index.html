@@ -15,8 +15,144 @@
     <title>Ilya Baranouski</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <header class="header container">
+      <ul class="header-nav">
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link ">Socials</a></li>
+    </ul>
+    </header>
+    <main class="main container">
+      <section class="profile">
+        <img src="./profile.jpg" alt="profile" class="profile-pic"> 
+        <div class="profile-info">
+          <h1 class= "profile-name">Ilya Baranouski</h1>
+          <h3 class="profile-pos">Junior frontend developer</h3>
+          <span class="profile-contact">rany4ka@gmail.com</span>
+          <span class="profile-contact">+375297754915</span>
+        </div>
+      </section>
+      <section class="about section-wrapper">
+        <div class="section-title">About</div>
+        <div class="about-content section-content">
+          <p>Hello, my name is Ilya. I’m 24 years old. I was born in Gomel, now I live in Osipovichi, Belarus.	I am currently working as an engineer at an automobile factory. I got a position here through the university placement.
+          </p> 
+          <p>I have always been a keen learner in a sphere of technologies spending a lot of time on the computer, learning how it works and exploring its features. I have been interested in web development since my studies at the lyceum. I tried to create a basic web-sites, following different textbooks.
+          </p> 
+          <p>Now I am extremely motivated for career change and get as much knowledge in that sphere as it possible.
+          </p>
+        </div>
+      </section>
+      <section class="education section-wrapper">
+        <div class="section-title">Education</div>
+        <div class="about-content section-content">
+          <p>Belarussian State Technological University, Faculty of Chemical Technology and Engineering
+          </p>
+          <p>
+            Specialization - Production of products based on 3D technologies
+          </p>
+          <p>September 2016 - January 2021</p>
+        </div>
+      </section>
+      <section class="skills section-wrapper">
+        <div class="section-title">Tech Stack:</div>
+        <div class="section-content skills-list">
+          <li class="skills-item">
+            <img src="./assets/skills/html.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/css.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/js.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/ts.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/webpack.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/figma.svg" alt="skills-item">
+          </li>
+          <li class="skills-item">
+            <img src="./assets/skills/md.svg" alt="skills-item">
+          </li>
+        </div>
+      </section>
+      <section class="portfolio section-wrapper">
+        <div class="section-title">Portfolio</div>
+        <div class="section-content" id="Portfolio">
+          
+          <div class="carousel_wrapper">
+            <div class="carousel">
+              
+              <div class="portfolio-page" >
+                <div class="portfolio-item">
+                  <h3 class="item-name">Online-store</h3>
+                    <img src="./assets/portfolio/store.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+                <div class="portfolio-item">
+                  <h3 class="item-name">Gem puzzle game</h3>
+                    <img src="./assets/portfolio/puzzle.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+              </div>
+              <div class="portfolio-page" >
+                <div class="portfolio-item">
+                  <h3 class="item-name">Birdsong quiz</h3>
+                    <img src="./assets/portfolio/birdsong.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+                <div class="portfolio-item">
+                  <h3 class="item-name">Tic Tac Toe game</h3>
+                    <img src="./assets/portfolio/ttt.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+              </div>
+              <div class="portfolio-page">
+                <div class="portfolio-item">
+                  <h3 class="item-name">Shelter</h3>
+                    <img src="./assets/portfolio/shelter.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+                <div class="portfolio-item">
+                  <h3 class="item-name">Portfolio</h3>
+                    <img src="./assets/portfolio/portfolio.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+              </div>
+              <div class="portfolio-page" >
+                <div class="portfolio-item">
+                  <h3 class="item-name">Eco sounds</h3>
+                    <img src="./assets/portfolio/eco-sounds.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+                <div class="portfolio-item">
+                  <h3 class="item-name">Random quote generator</h3>
+                    <img src="./assets/portfolio/quotes.png" alt="item-image" class="item-image">
+                    <button class="button link-button"><a href="">View</a></button>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+          <button class="slider slider_left ">←</button>
+          <button class="slider slider_right ">→</button>
+        </div>
+      </section>
+      <section class="socials section-wrapper">
+        <div class="section-title">Socials</div>
+        <div class="section-content social-list" id="Socials"> 
+          <li class="soc-item"><a href="https://github.com/raNYnight" class="soc-link">GitHub</a></li>
+          <li class="soc-item"><a href="https://t.me/raNYnight" class="soc-link">Telegram</a></li>
+          <li class="soc-item"><a href="https://discordapp.com/users/raNYnighty#0973" class="soc-link">Discord</a></li>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container"></footer>
   </body>
 </html>

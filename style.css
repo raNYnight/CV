@@ -1,0 +1,110 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(225, 255, 213, 0.815);
+}
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    gap: 20px;
+}
+.profile-pic{
+    width: 150px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-name{
+    margin: 0;
+}
+.profile-pos{
+    margin-bottom: 5px;
+}
+.profile-contact{
+    margin: 5px 0;
+}
+.section-wrapper{
+    display: flex;
+}
+.section-title{
+    background-color: aquamarine;
+    width: 150px;
+    text-align: center;
+    padding-top: 17px;
+    flex-shrink: 0
+}
+.section-content{
+    padding: 0 20px;
+    max-width: 710px;
+    text-align: justify;
+}
+.skills-list{
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel_wrapper {
+    margin-top: 17px;
+    width: 600px;
+    height: 250px;
+    border: 1px black solid;
+    overflow: hidden;
+   
+}
+
+.carousel {
+    position: relative;
+    width: 2400px;
+    left: 0px;
+    display: flex;
+}
+.portfolio-item{
+    width: 270px;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.portfolio-page{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.item-image{
+    width: 100%;
+}
+
+.social-list{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
