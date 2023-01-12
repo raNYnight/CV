@@ -1,110 +1,190 @@
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background: rgba(225, 255, 213, 0.815);
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgba(225, 255, 213, 0.815);
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .container {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
 .header {
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.header-nav{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+.header-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
-.main{
-    display: flex;
-    flex-direction: column;
+.main {
+  display: flex;
+  flex-direction: column;
 }
-.profile{
-    display: flex;
-    gap: 20px;
+.profile {
+  display: flex;
+  gap: 20px;
 }
-.profile-pic{
-    width: 150px;
+.profile-pic {
+  width: 150px;
 }
-.profile-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.profile-name{
-    margin: 0;
+.profile-name {
+  margin: 0;
 }
-.profile-pos{
-    margin-bottom: 5px;
+.profile-pos {
+  margin-bottom: 5px;
 }
-.profile-contact{
-    margin: 5px 0;
+.profile-contact {
+  margin: 5px 0;
 }
-.section-wrapper{
-    display: flex;
+.section-wrapper {
+  display: flex;
 }
-.section-title{
-    background-color: aquamarine;
-    width: 150px;
-    text-align: center;
-    padding-top: 17px;
-    flex-shrink: 0
+.section-title {
+  background-color: aquamarine;
+  width: 150px;
+  text-align: center;
+  padding-top: 17px;
+  flex-shrink: 0;
+  font-weight: bold;
 }
-.section-content{
-    padding: 0 20px;
-    max-width: 710px;
-    text-align: justify;
+.section-content {
+  border-top: 2px solid black;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 710px;
+  text-align: justify;
 }
-.skills-list{
-    padding-top: 20px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+.skills-list {
+  padding-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel_wrapper {
-    margin-top: 17px;
-    width: 600px;
-    height: 250px;
-    border: 1px black solid;
-    overflow: hidden;
-   
+  margin-top: 17px;
+  width: 500px;
+  height: 500px;
+  border: 1px black solid;
+  overflow: hidden;
 }
 
 .carousel {
-    position: relative;
-    width: 2400px;
-    left: 0px;
-    display: flex;
-}
-.portfolio-item{
-    width: 270px;
-    display: flex;
-    height: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.portfolio-page{
-    width: 600px;
-    display: flex;
-    justify-content: space-around;
-}
-.item-image{
-    width: 100%;
+  position: relative;
+  width: 4500px;
+  display: flex;
+  transition: 1s;
 }
 
-.social-list{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+.portfolio-page {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  background-color: rgb(164, 255, 133);
+}
+.button:hover {
+  background-color: rgb(255, 255, 255);
+}
+.button:active {
+  background-color: rgb(228, 199, 199);
+}
+.item-name {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.item-image {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#Store {
+  background-image: url(./assets/portfolio/store.png);
+}
+#Zoo {
+  background-image: url(./assets/portfolio/zoo.png);
+}
+#Puzzle {
+  background-image: url(./assets/portfolio/puzzle.png);
+}
+#Birdsong {
+  background-image: url(./assets/portfolio/birdsong.png);
+}
+#Shelter {
+  background-image: url(./assets/portfolio/shelter.png);
+}
+#TicTac {
+  background-image: url(./assets/portfolio/ttt.png);
+}
+#Portfolio {
+  background-image: url(./assets/portfolio/portfolio.png);
+}
+#Quote {
+  background-image: url(./assets/portfolio/quotes.png);
+}
+#Eco {
+  background-image: url(./assets/portfolio/eco-sounds.png);
+}
+
+.social-list {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+}
+.portfolio_page-number {
+  width: 35px;
+  height: 35px;
+  border: black 1px solid;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+  background-color: darkgray;
+}
+.active {
+  background: green;
+}
+.active:hover {
+  background-color: chartreuse;
 }
