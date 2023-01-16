@@ -2,10 +2,17 @@ body {
   font-family: "Roboto", sans-serif;
   background: rgba(225, 255, 213, 0.815);
   color: black;
+  background-image: linear-gradient(
+    181.2deg,
+    rgba(245, 245, 245, 1) 48.8%,
+    rgba(214, 230, 242, 1) 72.3%
+  );
+}
+body::-webkit-scrollbar {
+  width: 0;
 }
 a {
   text-decoration: none;
-  color: black;
 }
 .container {
   max-width: 900px;
@@ -26,6 +33,15 @@ a {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+}
+.nav-link {
+  color: #303841;
+  text-decoration: underline;
+}
+.nav-item:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  font-weight: bold;
 }
 .main {
   display: flex;
@@ -54,35 +70,41 @@ a {
 }
 .section-wrapper {
   display: flex;
+  /* padding: 20px 0; */
 }
 .section-title {
-  background-color: aquamarine;
+  background-color: #303841;
   width: 150px;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 30px;
   flex-shrink: 0;
   font-weight: bold;
+  color: #f5f5f5;
 }
 .section-content {
-  border-top: 2px solid black;
+  border-top: 2px solid #303841;
   width: 100%;
   padding: 0 20px;
   max-width: 710px;
   text-align: justify;
+  padding: 20px;
+}
+.about-content {
+  padding-top: 12px;
 }
 .skills-list {
-  padding-top: 20px;
+  padding-top: 30px;
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
 .carousel_wrapper {
-  margin-top: 17px;
+  margin-top: 0px;
   width: 500px;
   height: 500px;
-  border: 1px black solid;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .carousel {
@@ -105,21 +127,26 @@ a {
   text-decoration: none;
   width: 150px;
   height: 35px;
-  background-color: rgb(164, 255, 133);
+  background-color: #4c70ac;
+  border: none;
+}
+.button a {
+  color: #f5f5f5;
 }
 .button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #65b5fc;
 }
-.button:active {
+/* .button:active {
   background-color: rgb(228, 199, 199);
-}
+} */
 .item-name {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 .item-image {
   width: 100%;
   height: 400px;
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -152,22 +179,17 @@ a {
   background-image: url(./assets/portfolio/eco-sounds.png);
 }
 
-.social-list {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
 .pagination {
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 500px;
+  margin: 0 auto;
 }
 .portfolio_page-number {
   width: 35px;
   height: 35px;
-  border: black 1px solid;
+  border: #303841 1px solid;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -180,11 +202,122 @@ a {
   text-decoration: none;
   width: 100px;
   height: 35px;
-  background-color: darkgray;
+  background-color: #9f7b4b;
 }
 .active {
-  background: green;
+  background: #e6b269;
 }
 .active:hover {
-  background-color: chartreuse;
+  background-color: #ffd59a;
+}
+
+.social-list {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.social-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: #c4c4c480;
+}
+.social-item {
+  display: flex;
+}
+.social-item:hover a {
+  transform: scale(1.05);
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.social-item:active a {
+  color: #4b9200;
+}
+.social-item:hover .social-icon {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.social-item:active .social-icon {
+  background-color: #4b9200;
+}
+.social-link {
+  color: #303841;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.telegram {
+  background: rgb(196 196 196 / 0%) url(./assets/icons/tg.svg) no-repeat center;
+  background-size: contain;
+}
+.github {
+  background: rgb(196 196 196 / 0%) url(./assets/icons/github.svg) no-repeat
+    center;
+  background-size: contain;
+}
+
+.discord {
+  background: rgb(196 196 196 / 0%) url(./assets/icons/discord.svg) no-repeat
+    center;
+  background-size: contain;
+}
+
+.inst {
+  background: rgb(196 196 196 / 0%) url(./assets/icons/inst.svg) no-repeat
+    center;
+  background-size: contain;
+}
+
+@media (max-width: 690px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .portfolio-page {
+    width: 300px;
+    height: 320px;
+  }
+  .carousel {
+    width: 2700px;
+    height: 320px;
+  }
+  .carousel_wrapper {
+    width: 300px;
+    height: 340px;
+  }
+  .pagination {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  .section-wrapper {
+    flex-direction: column;
+  }
+  .section-title {
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .section-content {
+    padding: 0 10px;
+    max-width: fit-content;
+    border: none;
+  }
+  .section-wrapper {
+    align-items: center;
+  }
+  .portfolio .section-content {
+    padding: 0;
+  }
 }

@@ -3,6 +3,7 @@ const sliderLeft = document.querySelector(".slider_left");
 const sliderRight = document.querySelector(".slider_right");
 const pageNumberNode = document.querySelector("#page-number");
 let page = 1;
+let moveLength = 500;
 
 sliderRight.addEventListener("click", moveRight);
 sliderRight.classList.add("active");
@@ -32,7 +33,7 @@ function moveLeft() {
   page -= 1;
   pageNumberNode.textContent = page;
   let left = parseInt(carousel.style.left);
-  left = left + 500;
+  left = left + moveLength;
   carousel.style.left = `${left}px`;
   sliderLeft.removeEventListener("click", moveLeft);
   sliderRight.removeEventListener("click", moveRight);
@@ -41,7 +42,7 @@ function moveRight() {
   page += 1;
   pageNumberNode.textContent = page;
   let left = parseInt(carousel.style.left);
-  left = left - 500;
+  left = left - moveLength;
   carousel.style.left = `${left}px`;
   sliderLeft.removeEventListener("click", moveLeft);
   sliderRight.removeEventListener("click", moveRight);
