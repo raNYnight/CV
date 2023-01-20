@@ -116,7 +116,7 @@ a {
   display: flex;
 }
 .section-title {
-  background-color: var(--dark);
+  background-color: var(--dark-blue);
   width: 150px;
   text-align: center;
   padding-top: 30px;
